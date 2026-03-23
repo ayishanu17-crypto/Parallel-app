@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import RoomCard from "../components/RoomCard";
 
 function Home() {
   return (
@@ -79,9 +78,12 @@ function Home() {
             />
             <h3 className="text-xl font-semibold mb-2">Mathematics Study Group</h3>
             <p className="text-gray-400 mb-4">12 people studying</p>
-            <button className="bg-green-600 px-4 py-2 rounded-lg">
+            <Link
+              to="/signup"
+              className="bg-green-600 px-4 py-2 rounded-lg inline-block text-center"
+            >
               Join
-            </button>
+            </Link>
           </div>
 
           <div className="bg-gray-900 p-5 rounded-2xl shadow-lg hover:scale-105 transition">
@@ -92,9 +94,9 @@ function Home() {
             />
             <h3 className="text-xl font-semibold mb-2">Physics Problem Solving</h3>
             <p className="text-gray-400 mb-4">8 people studying</p>
-            <button className="bg-green-600 px-4 py-2 rounded-lg">
+            <Link to="/signup" className="bg-green-600 px-4 py-2 rounded-lg inline-block text-center">
               Join
-            </button>
+            </Link>
           </div>
 
           <div className="bg-gray-900 p-5 rounded-2xl shadow-lg hover:scale-105 transition">
@@ -105,9 +107,9 @@ function Home() {
             />
             <h3 className="text-xl font-semibold mb-2">Chemistry Lab Prep</h3>
             <p className="text-gray-400 mb-4">15 people studying</p>
-            <button className="bg-green-600 px-4 py-2 rounded-lg">
+            <Link to="/signup" className="bg-green-600 px-4 py-2 rounded-lg inline-block text-center">
               Join
-            </button>
+            </Link>
           </div>
 
           <div className="bg-gray-900 p-5 rounded-2xl shadow-lg hover:scale-105 transition">
@@ -118,9 +120,9 @@ function Home() {
             />
             <h3 className="text-xl font-semibold mb-2">Biology Study Circle</h3>
             <p className="text-gray-400 mb-4">6 people studying</p>
-            <button className="bg-green-600 px-4 py-2 rounded-lg">
+            <Link to="/signup" className="bg-green-600 px-4 py-2 rounded-lg inline-block text-center">
               Join
-            </button>
+            </Link>
           </div>
 
           <div className="bg-gray-900 p-5 rounded-2xl shadow-lg hover:scale-105 transition">
@@ -131,9 +133,9 @@ function Home() {
             />
             <h3 className="text-xl font-semibold mb-2">CS Programming Session</h3>
             <p className="text-gray-400 mb-4">10 people studying</p>
-            <button className="bg-green-600 px-4 py-2 rounded-lg">
+            <Link to="/signup" className="bg-green-600 px-4 py-2 rounded-lg inline-block text-center">
               Join
-            </button>
+            </Link>
           </div>
 
           <div className="bg-gray-900 p-5 rounded-2xl shadow-lg hover:scale-105 transition">
@@ -144,9 +146,9 @@ function Home() {
             />
             <h3 className="text-xl font-semibold mb-2">English Literature</h3>
             <p className="text-gray-400 mb-4">9 people studying</p>
-            <button className="bg-green-600 px-4 py-2 rounded-lg">
+            <Link to="/signup" className="bg-green-600 px-4 py-2 rounded-lg inline-block text-center">
               Join
-            </button>
+            </Link>
           </div>
         </div>
       </div>
