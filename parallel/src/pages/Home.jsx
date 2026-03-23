@@ -9,11 +9,6 @@ function Home() {
       
       <Navbar />
 
-      {/* DEBUG: preview indicator (visible in UI) */}
-      <div className="w-full text-center py-2 bg-green-500 text-white font-semibold">
-        App preview is active. If you see this, the route is rendering correctly.
-      </div>
-
       {/* HERO SECTION */}
       <div className="flex flex-col items-center justify-center text-center py-20 px-6">
         <h1 className="text-5xl font-bold mb-4">
