@@ -7,10 +7,10 @@ function AppLayout() {
   const isFocusMode = location.pathname.startsWith("/room");
 
   return (
-    <div className="flex flex-col min-h-screen bg-black text-white">
+    // Tailwind will now look for 'bg-app-bg' and 'text-app-text' defined in your config
+    <div className="flex flex-col min-h-screen bg-app-bg text-app-text antialiased">
       {!isFocusMode && <Navbar />}
       
-      {/* flex-grow pushes the footer to the bottom if content is short */}
       <main className={`flex-grow ${!isFocusMode ? "pt-20" : ""}`}>
         <Outlet />
       </main>
